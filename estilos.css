@@ -91,6 +91,187 @@ header{
     display: inline-block;
     padding: 11px 35px;
     background-color: #ce9678;
-    
+    color: #f9fafc;
+    text-transform: uppercase;
 
+}
+
+.btn-1:hover{
+    background-color: #ebad8d;
+}
+.coffe{
+    padding: 100px;
+    background-color: #e1e2e6;
+    position: relative;
+}
+.coffe-content{
+    text-align: center;
+}
+.coffe-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.coffe-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.coffe-1{
+    padding: 0 25px;
+}
+.coffe-1 img{
+    width: 200px;
+}
+.coffe-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffe-1 h3{
+
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.servicios{
+    background-image: linear-gradient(
+        rgba(0,0,0,0,7),
+        rgba(0,0,0,0,7)),
+        url(images/bg3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.servicios-content{
+    text-align: center;
+}
+.servicios-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+}
+.servicios-content p{
+    font-size: 55px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+ .servicios-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+ }
+.servicios-1{
+    padding: 0 100px;
+}
+.servicios-1 img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+.servicios-1 h3{
+    color: #ebad8d;
+    font-size: 18px;
+}
+.general{
+    display: flex;
+
+}
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #ebad8d;
+}
+.general-2{
+    background-image: url(images/coffe-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-3{
+    background-image: url(images/coffee-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0 ;
+}
+.blog{
+    padding: 100px 0 ;
+    text-align: center;
+}
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1{
+    padding: 15px 55px ;
+
+}
+.blog-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.blog-1 h3{
+    font-size: 25px;
+    color: #323337;
+}
+.footer{
+    padding: 100px 0;
+    background-color: #000;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+.link h3{
+    font-size: 18px;
+    color:#f9fafc ;
+    margin-bottom: 15px;
+}
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+     
+    }
 }
