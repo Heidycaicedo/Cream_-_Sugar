@@ -14,21 +14,25 @@ body{
 }
 
 .container{
-    max-width: 120px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
+
 header{
     background-image: linear-gradient(
-        rgba(0,0,0,0,7),
-        rgba(0,0,0,0,7),
-        url(images/bg.jpg));
-        background-position: center bottom;
-        background-repeat:  no-repeat;
-        background-size: cover;
-        min-height:  70vh;
-        display: flex;
-        align-items: center;
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url(images/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
 }
+
 
 .menu{
     position: absolute;
@@ -167,7 +171,7 @@ header{
 
 }
 .servicios-content p{
-    font-size: 55px;
+    font-size: 16px;
     color: #c5c5c5;
     margin-bottom: 50px;
     padding: 0 100px;
@@ -331,7 +335,7 @@ p{
         padding:30px;
         text-align: center;
     }
-    .general-2 .general-3{
+    .general-2, .general-3{
         display: none;
     }
     .blog{
