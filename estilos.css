@@ -19,57 +19,108 @@ body{
     padding: 0 15px;
 }
 
-header{
+.header {
     background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ),
-    url(images/bg.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
+        rgba(0,0,0,0.6), 
+        rgba(0,0,0,0.6)
+    ), url(images/bg.jpg);
+    background-position: center center;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-
-.menu{
+.menu {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
-.logo{
-    color: rgb(0, 255, 255);
+.logo {
+    color: white;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f39c12; 
+}
+.navbar {
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100%;           
+  padding: 10px 40px;  
+  display: flex;         
+  justify-content: space-between;
+  align-items: center;   
+  background-color:black;
+  z-index: 1000;         
+}
+.navbar .logo img {
+    height: 50px; 
+    width: auto;  
+}
+.menu{
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu .navbar ul {
+      list-style: none; 
+      display: flex; 
+      gap: 30px; 
+      margin: 0;
+      padding: 0;
+}
 .menu .navbar ul li {
-    position: relative;
-    float: left;
+   list-style: none;
 }
 
 .menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: aliceblue;
-    display:block;
-    font-weight: 600;
+    text-decoration: none; 
+      color: white; 
+      font-weight: bold; 
+      font-family: Arial, sans-serif;
+      transition: 0.3s; 
 }
 .menu .navbar ul li a:hover {
-    color: #ce9678;
+     color: #ffcccb;
 }
 #menu{
     display: none;
 }
 .menu-icono{
-    width: 25px;
+       display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
+
 .menu label {
     cursor: pointer;
     display: none;
@@ -151,8 +202,8 @@ header{
 .servicios{
     background-image: linear-gradient(
         rgba(0,0,0,0,7),
-        rgba(0,0,0,0,7)),
-        url(images/bg3.jpg);
+        rgba(0,0,0,0,7)
+        ), url(images/bg3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,11 +319,36 @@ p{
     margin-bottom: 15px;
 }
 @media(max-width:991px){
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
     .menu{
         padding: 30px;
     }
     .menu label{
         display: initial;
+    }
+    .menu .navbar ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0,0,0,0.9);
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        padding: 20px;
+        display: none;
     }
     .menu .navbar{
         position: absolute;
@@ -286,7 +362,10 @@ p{
         width: 100%;
     }
     #menu:checked ~ .navbar{
-        display: initial;
+        display: flex;
+    }
+    .menu-icono {
+        display: block;
     }
     .header{
         min-height: 0vh;
