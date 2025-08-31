@@ -1,0 +1,366 @@
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),   /* Sombra ligera para que se lea el texto */
+        rgba(0, 0, 0, 0.7)
+    ), url("images/bg.jpg"); /* Aquí pones la foto que subiste */
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu .navbar ul {
+      list-style: none; 
+      display: flex; 
+      gap: 30px; 
+      margin: 0;
+      padding: 0;
+}
+.menu .navbar ul li {
+   list-style: none;
+}
+
+.menu .navbar ul li a{
+    text-decoration: none; 
+      color: white; 
+      font-weight: bold; 
+      font-family: Arial, sans-serif;
+      transition: 0.3s; 
+}
+.menu .navbar ul li a:hover {
+     color: #ffcccb;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+       display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color:#f0fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+ 
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom:25px;
+    margin-top: 120px; 
+    text-align: center;
+
+}
+
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce9678;
+    color: #f9fafc;
+    text-transform: uppercase;
+
+}
+
+.btn-1:hover{
+    background-color: #ebad8d;
+}
+.coffe{
+    padding: 100px;
+    background-color: #e1e2e6;
+    position: relative;
+}
+.coffe-content{
+    text-align: center;
+}
+.coffe-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.coffe-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.coffe-1{
+    padding: 0 25px;
+}
+.coffe-1 img{
+    width: 200px;
+}
+.coffe-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffe-1 h3{
+
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.servicios{
+    background-image: linear-gradient(
+        rgba(0,0,0,0,7),
+        rgba(0,0,0,0,7)
+        ), url(images/bg3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.servicios-content{
+    text-align: center;
+}
+.servicios-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+}
+.servicios-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+ .servicios-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+ }
+.servicios-1{
+    padding: 0 100px;
+}
+.servicios-1 img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+.servicios-1 h3{
+    color: #ebad8d;
+    font-size: 18px;
+}
+.general{
+    display: flex;
+
+}
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #ebad8d;
+}
+.general-2{
+    background-image: url(images/coffe-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-3{
+    background-image: url(images/coffee-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0 ;
+}
+.blog{
+    padding: 100px 0 ;
+    text-align: center;
+}
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1{
+    padding: 15px 55px ;
+
+}
+.blog-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.blog-1 h3{
+    font-size: 25px;
+    color: #323337;
+}
+.footer{
+    padding: 100px 0;
+    background-color: #000;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+.link h3{
+    font-size: 18px;
+    color:#f9fafc ;
+    margin-bottom: 15px;
+}
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+@media(max-width:991px){
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0,0,0,0.9);
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        padding: 20px;
+        display: none;
+    }
+    .menu .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right: 0;
+        background-color: #323232;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: flex;
+    }
+    .menu-icono {
+        display: block;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px;
+    }
+    .header-content p{
+        padding: 0;
+    }
+    .coffe{
+        padding: 30px;
+
+    }
+    .coffe-content h2{
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+    .coffe-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .coffe-img{
+        display: none;
+    }
+    .servicios{
+        padding: 30px;
+    }
+    .servicios-content p{
+        padding: 0;
+    }
+    .servicios-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .servicios-1{
+        margin-bottom: 25px;
+    }
+    .general{
+        flex-direction:column;
+    }
+    .general-1{
+        width: 100%;
+        padding:30px;
+        text-align: center;
+    }
+    .general-2, .general-3{
+        display: none;
+    }
+    .blog{
+        padding:30px;
+    }
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-1{
+        padding: 30px;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
