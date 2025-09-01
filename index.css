@@ -55,7 +55,16 @@ body {
   text-align: justify; /* Justifica el texto */
   font-weight: bol;
   text-align: 80px;
-  margin: 0 auto 100px;
+  margin: 0 auto 1 px;
+}
+.txl{
+  width: 90%;
+  font-size: 25px;     /* Tamaño de letra (puedes cambiarlo) */
+  line-height: 1.5;    /* Espaciado entre líneas */
+  text-align: justify; /* Justifica el texto */
+  font-weight: bol;
+  text-align: 80px;
+  margin: 0 auto 0px;
 }
 
 
