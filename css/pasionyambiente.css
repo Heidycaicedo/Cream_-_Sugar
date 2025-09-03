@@ -26,10 +26,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;      /* fijo arriba */
+  position: fixed;     
   top: 0;
   left: 0;
-  z-index: 1000;        /* encima de todo */
+  z-index: 1000;        
 }
 
 .navbar .logo img {
@@ -106,7 +106,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Overlay con texto */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -126,7 +125,6 @@ body {
     opacity: 1;
 }
 
-/* Frase */
 .frase {
     text-align: center;
     padding: 50px 20px;
@@ -136,7 +134,6 @@ body {
     font-style: italic;
 }
 
-/* Footer */
 .footer {
     background: #000;
     color: #fff;
