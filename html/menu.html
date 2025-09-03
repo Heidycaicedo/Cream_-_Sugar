@@ -1,220 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menu</title>
-   
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="animaciones css">
+    <title>Menú - Cream & Sugar</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img  src="images/logo.png" class="menu-icono" alt="">
+                <img src="../images/logo.png" alt="Logo Cream & Sugar">
             </div>
-
-            <div class="menu-toggle" id="menu-toggle">☰</div>
-                
-                <ul class="menu">
-                    <li><a href="index.html"><button>Inicio</button></a></li>
-                    <li><a href="html/menu.html"><button>Menu</button></a></li>
-                    <li><a href="html/pasionyambiente.html"><button>Pasion y Ambiente</button></a></li>
-                    <li><a href="html/galeria.html"><button>Galeria</button></a></li>
-                    <li><a href="html/contactos.html"><button>Contactos</button></a></li>
-
+            <ul class="menu">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="../html/menu.html">Menú</a></li>
+                <li><a href="../html/pasionyambiente.html">Pasión y Ambiente</a></li>
+                <li><a href="../html/Productos.html">Productos</a></li>
+                <li><a href="../html/contactos.html">Contactos</a></li>
                 </ul>
         </nav>
-       
 
-        <div class="header-content container">
-            <h1>Menu</h1>
-            <p>
-                Disfruta de nuestra selección de cafés, bebidas y postres  <br>
-                preparados con pasión y dedicación.
-            </p>
+        <div class="header-content">
+            <h1>Menú</h1>
+            <p>Descubre nuestra selección de cafés, bebidas y postres preparados con pasión.</p>
         </div>
     </header>
 
+    <!-- MENÚ DESTACADO -->
+    <section class="menu-destacado">
+        <h2>Menú Destacado</h2>
+        <p>Una selección especial de nuestras bebidas y postres más populares</p>
 
+        <div class="menu-grid">
+            <a href="#espresso" class="menu-card">
+                <img src="../images/expreso.webp" alt="Espresso">
+                <div class="card-info">
+                    <h3>Espresso</h3>
+                    <p>Un clásico intenso para amantes del café puro.</p>
+                </div>
+            </a>
 
+            <a href="#latte" class="menu-card">
+                <img src="../images/latte frio.jpg" alt="Latte">
+                <div class="card-info">
+                    <h3>Latte</h3>
+                    <p>Café suave con abundante leche cremosa.</p>
+                </div>
+            </a>
 
-    <section class="coffe">
+            <a href="#capuccino" class="menu-card">
+                <img src="../images/capu.jpg" alt="Capuccino">
+                <div class="card-info">
+                    <h3>Cappuccino</h3>
+                    <p>Equilibrio perfecto entre café, leche y espuma.</p>
+                </div>
+            </a>
+
+            <a href="#tiramisu" class="menu-card">
+                <img src="..//images/tiramisu.jpg" alt="Tiramisú">
+                <div class="card-info">
+                    <h3>Tiramisú</h3>
+                    <p>Postre italiano con café y crema mascarpone.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- BEBIDAS CALIENTES -->
+    <section class="coffe" id="espresso">
         <div class="coffe-content container">
-            <h2>Bevidas calientes </h2>
+            <h2>Bebidas Calientes</h2>
             <div class="coffe-group">
                 <div class="coffe-1">
-                    <img src="images/expreso.webp" alt="">
+                    <img src="../images/expreso.webp" alt="Espresso">
                     <h3>Espresso</h3>
                     <p>Café intenso y aromático en una pequeña dosis de energía.</p>
                 </div>           
                 <div class="coffe-1">
-                    <img src="images/americano.jpeg" alt="">
+                    <img src="../images/americano.jpeg" alt="Americano">
                     <h3>Americano</h3>
-                    <p>Espresso suavizado con agua caliente, ideal para quienes prefieren un café ligero.</p>
+                    <p>Espresso suavizado con agua caliente.</p>
                 </div>
                 <div class="coffe-1">
-                    <img src="images/capu.jpg" alt="">
+                    <img src="../images/capu.jpg" alt="Cappuccino">
                     <h3>Cappuccino</h3>
                     <p>Espresso con leche espumosa y un toque de cacao.</p>
                 </div>
                 <div class="coffe-1">
-                    <img src="images/latte.jpg" alt="">
+                    <img src="../images/latte.jpg" alt="Latte" id="latte">
                     <h3>Latte</h3>
                     <p>Espresso con abundante leche cremosa y ligera espuma.</p>
                 </div>
-                <div class="coffe-1">
-                    <img src="images/moca.jpg" alt="">
-                    <h3>Mocaccino</h3>
-                    <p>Espresso con leche vaporizada y un toque de chocolate.</p>
-                </div>
-                <div class="coffe-1">
-                    <img src="images/cl.jpg" alt="">
-                    <h3>Café con leche</h3>
-                    <p>Mitad café, mitad leche caliente, clásico y reconfortante.</p>
-                </div>
             </div>
+        </div>
+    </section>
 
-
-            <div class="coffe-content container">
-            <h2>Bevidas Frías</h2>       
+    <!-- BEBIDAS FRÍAS -->
+    <section class="coffe">
+        <div class="coffe-content container">
+            <h2>Bebidas Frías</h2>       
             <div class="coffe-group">
                 <div class="coffe-1">
-                    <img src="images/brew.jpg" alt="">
+                    <img src="../images/brew.jpg" alt="Cold Brew">
                     <h3>Cold Brew</h3>
-                    <p>Café infusionado en frío por horas, suave y refrescante.</p>
+                    <p>Café infusionado en frío, suave y refrescante.</p>
                 </div>              
-                 <div class="coffe-1">
-                    <img src="images/latte frio.jpg" alt="">
+                <div class="coffe-1">
+                    <img src="../images/latte frio.jpg" alt="Iced Latte">
                     <h3>Iced Latte</h3>
                     <p>Espresso con leche fría y cubos de hielo.</p>
                 </div>
                 <div class="coffe-1">
-                    <img src="images/frape.jpg" alt="">
-                    <h3>Frappé de café</h3>
+                    <img src="../images/frape.jpg" alt="Frappé de café">
+                    <h3>Frappé</h3>
                     <p>Café batido con hielo, cremoso y energizante.</p>
                 </div>
-                <div class="coffe-1">
-                    <img src="images/moca frio.jpg" alt="">
-                    <h3>Mocca Frío</h3>
-                    <p>Café frío con leche y sirope de chocolate.</p>
-                </div>
-                <div class="coffe-1">
-                    <img src="images/affgato.jpg" alt="">
-                    <h3>Affogato</h3>
-                    <p>Bola de helado bañada con espresso caliente.</p>
-                </div>              
             </div>
+        </div>
+    </section>
 
-
-
-
-            <div class="coffe-content container">
+    <!-- POSTRES -->
+    <section class="coffe" id="tiramisu">
+        <div class="coffe-content container">
             <h2>Postres y Bocadillos</h2>
             <div class="coffe-group">
                 <div class="coffe-1">
-                    <img src="images/chescake.jpg" alt="">
-                    <h3>Cheesecake </h3>
-                    <p>Suave tarta de queso con base de galleta y cobertura de frutos rojos o caramelo.</p>
+                    <img src="../images/chescake.jpg" alt="Cheesecake">
+                    <h3>Cheesecake</h3>
+                    <p>Suave tarta de queso con frutos rojos o caramelo.</p>
                 </div>                       
-                 <div class="coffe-1">
-                    <img src="images/brw.jpg" alt="">
+                <div class="coffe-1">
+                    <img src="../images/brw.jpg" alt="Brownie">
                     <h3>Brownie</h3>
-                    <p>Bizcocho de chocolate denso y húmedo, ideal para acompañar con café.</p>
+                    <p>Bizcocho de chocolate denso y húmedo.</p>
                 </div>
                 <div class="coffe-1">
-                    <img src="images/pan.jpg" alt="">
-                    <h3>Croissant</h3>
-                    <p>Relleno de jamón y queso, ligero y sabroso.</p>
-                </div>
-                <div class="coffe-1">
-                    <img src="images/sanw.jpg" alt="">
-                    <h3>Sandwich</h3>
-                    <p>Clásico de jamón, queso y vegetales frescos.</p>
-                </div>
-                            
-            </div>
-
-
-            <div class="coffe-group">
-                <div class="coffe-1">
-                    <img src="images/pani.jpg" alt="">
-                    <h3>Panini </h3>
-                    <p>Pan caliente prensado con pollo, queso y salsas.</p>
-                </div>                
-                 <div class="coffe-1">
-                    <img src="images/tiramisu.jpg" alt="">
+                    <img src="../images/tiramisu.jpg" alt="Tiramisú">
                     <h3>Tiramisú</h3>
-                    <p>Postre italiano con capas de bizcocho, café y crema de mascarpone.</p>
+                    <p>Bizcocho, café y crema de mascarpone.</p>
                 </div>
-                <div class="coffe-1">
-                    <img src="images/quiche.jpg" alt="">
-                    <h3>Quiche</h3>
-                    <p>Tarta salada con huevo, queso y vegetales.</p>
-                </div>
-             
-              
-                
             </div>
-           
-                
-            
-         </div>
+        </div>
     </section>
 
-    <main class="servicios">
-        <div class="servicios-content container">
-            <div class="servicios-group">
-                <div class="servicios-1">
-                    <img src="images/p1.png" alt="">
-                    <h3>Bebidas Calientes</h3>
-                </div>
-
-                <div class="servicios-1">
-                    <img src="images/p2.png" alt="">
-                    <h3>Bebidas Frías</h3>
-                </div>
-
-                <div class="servicios-1">
-                    <img src="images/p3.png" alt="">
-                    <h3 >Postres</h3>
-                </div>
-            </div>
-            
-        </div>
-    </main>
-
- 
-
- 
-
-
-
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer-content container"> 
             <div class="link">
                 <h3>NOSOTROS</h3>
                 <ul>
-                    <li><a href="#">Cream & Sugar</a></li>
-                    <li><a href="#">NIT 10000005</a></li>
-                    <li><a href="#">Cra 2a Este No. 64-169 </a></li>
-                    <li><a href="#">Tunja Boyacá</a></li>
+                    <li>Cream & Sugar</li>
+                    <li>NIT 10000005</li>
+                    <li>Tunja, Boyacá</li>
                 </ul>
             </div>
             <div class="link">
                 <h3>CONTÁCTANOS</h3>
                 <ul>
-                    <li><a href="#">creamandsugar@gmail.com</a></li>
-                    <li><a href="#">+57 3233330012</a></li>
-                    
+                    <li>creamandsugar@gmail.com</li>
+                    <li>+57 323 333 0012</li>
                 </ul>
             </div>
             <div class="link">
-                <h3>ENCUENTRANOS</h3>
+                <h3>SÍGUENOS</h3>
                 <ul>
-                    <li><a href="#">@cream&sugar</a></li>
-                    <li><a href="#">En todas las redes sociales</a></li>
-                    
+                    <li>@cream&sugar</li>
+                    <li>En todas las redes sociales</li>
                 </ul>
             </div>
         </div>

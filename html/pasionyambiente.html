@@ -1,67 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pasion y Ambiente</title>
-   
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="animaciones css">
+    <title>Pasión y Ambiente | Cream & Sugar</title>
+    <link rel="stylesheet" href="../css/pasionyambiente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- 🔝 Encabezado -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img  src="images/logo.png" class="menu-icono" alt="">
+                <img src="../images/logo.png" alt="Logo Cream & Sugar">
             </div>
-
-            <div class="menu-toggle" id="menu-toggle">☰</div>
-                
-                <ul class="menu">
-                    <li><a href="index.html"><button>Inicio</button></a></li>
-                    <li><a href="html/menu.html"><button>Menu</button></a></li>
-                    <li><a href="html/pasionyambiente.html"><button>Pasion y Ambiente</button></a></li>
-                    <li><a href="html/galeria.html"><button>Galeria</button></a></li>
-                    <li><a href="html/contactos.html"><button>Contactos</button></a></li>
-
-                </ul>
+            <ul class="menu">
+                 <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="../html/menu.html">Menú</a></li>
+                <li><a href="../html/pasionyambiente.html">Pasión y Ambiente</a></li>
+                <li><a href="../html/Productos.html">Productos</a></li>
+                <li><a href="../html/contactos.html">Contactos</a></li>
+            </ul>
         </nav>
-       
-
-        <div class="header-content container">
-            <h1>historia del Cafe</h1>
+        <div class="header-content">
+            <h1>Pasión y Ambiente</h1>
+            <p>Un lugar para disfrutar, relajarse y vivir la experiencia del café en cada rincón.</p>
         </div>
     </header>
-
-
-
-
-    <section class="coffe">
-       
+    <section class="ambiente">
+        <div class="container">
+            <h2>Un Espacio para Todos los Sentidos</h2>
+            <p>
+                Cream & Sugar no es solo café, es un espacio para encontrarse con amigos, leer un libro, 
+                trabajar con tranquilidad o simplemente relajarse. Cada detalle de nuestra cafetería está 
+                pensado para que te sientas como en casa.
+            </p>
+        </div>
     </section>
-            <div >
-                <div class="j">                                     
-                    <p >El café tiene su origen en Etiopía, hace varios siglos. La leyenda cuenta que un pastor llamado Kaldi descubrió la planta cuando notó que sus cabras se volvían más activas después de comer los frutos rojos del cafeto. Intrigado, probó los granos y así nació la curiosidad por esta bebida energética.
-                     <br>
-                     Con el tiempo, el café viajó a Arabia, especialmente a Yemen, donde comenzó a prepararse como infusión en el siglo XV. Los monjes lo usaban para mantenerse despiertos en sus oraciones, y pronto se convirtió en una bebida popular en La Meca y El Cairo.
-                     <br>
-                     En el siglo XVII, el café llegó a Europa, donde al principio fue recibido con desconfianza, pero rápidamente conquistó a la gente. En ciudades como Londres, París y Venecia surgieron las primeras “casas de café”, lugares de encuentro donde se compartían ideas, cultura y negocios.
-                     <br>
-                     Gracias a las colonias europeas, el cultivo del café se expandió hacia América Latina y Asia. Países como Colombia, Brasil y Costa Rica se consolidaron como productores de gran prestigio, dando al mundo granos de excelente calidad.
-                     <br>
-                     Hoy en día, el café es mucho más que una bebida: es un símbolo de tradición, cultura y encuentro, disfrutado en millones de hogares y cafeterías alrededor del planeta.
-                    </p>
-                </div>      
+
+    <!-- 🖼️ Galería de fotos con textos -->
+    <section class="galeria">
+        <div class="grid">
+            <div class="item">
+                <img src="../images/cafeteria acogedora.jpg" alt="Cafetería acogedora">
+                <div class="overlay">Pasión por el Café</div>
             </div>
-           
-         </div>
-    
- 
+            <div class="item">
+                <img src="../images/decoracion.jpg" alt="Decoración cálida">
+                <div class="overlay">Ambiente Acogedor</div>
+            </div>
+            <div class="item">
+                <img src="../images/espaciorela.jpg" alt="Espacio relajante">
+                <div class="overlay">Relajación y Calma</div>
+            </div>
+            <div class="item">
+                <img src="../images/amigoscafe.jpg" alt="Amigos en cafetería">
+                <div class="overlay">Momentos Compartidos</div>
+            </div>
+            <div class="item">
+                <img src="../images/zonalectura.jpg" alt="Zona de lectura">
+                <div class="overlay">Lectura y Café</div>
+            </div>
+            <div class="item">
+                <img src="../images/cafe al aire libre.jpg" alt="Café al aire libre">
+                <div class="overlay">Café con Libertad</div>
+            </div>
+            <div class="item">
+                <img src="../images/plantas.jpg" alt="Decoración con plantas">
+                <div class="overlay">Naturaleza y Calidez</div>
+            </div>
+            <div class="item">
+                <img src="../images/nocturno.jpg" alt="Ambiente nocturno">
+                <div class="overlay">Magia Nocturna</div>
+            </div>
+        </div>
+    </section>
 
- 
+    <!-- ☕ Frase motivadora -->
+    <section class="frase">
+        <h2>"El café sabe mejor en un lugar donde el ambiente inspira."</h2>
+    </section>
 
-
-
-     <footer class="footer">
+    <!-- 🔻 Footer -->
+    <footer class="footer">
         <div class="footer-content container"> 
             <div class="link">
                 <h3>NOSOTROS</h3>
@@ -69,7 +89,7 @@
                     <li><a href="#">Cream & Sugar</a></li>
                     <li><a href="#">NIT 10000005</a></li>
                     <li><a href="#">Cra 2a Este No. 64-169 </a></li>
-                    <li><a href="#">Tunja Boyacá</a></li>
+                    <li><a href="#">Tunja, Boyacá</a></li>
                 </ul>
             </div>
             <div class="link">
@@ -77,15 +97,13 @@
                 <ul>
                     <li><a href="#">creamandsugar@gmail.com</a></li>
                     <li><a href="#">+57 3233330012</a></li>
-                    
                 </ul>
             </div>
             <div class="link">
-                <h3>ENCUENTRANOS</h3>
+                <h3>ENCUÉNTRANOS</h3>
                 <ul>
                     <li><a href="#">@cream&sugar</a></li>
                     <li><a href="#">En todas las redes sociales</a></li>
-                    
                 </ul>
             </div>
         </div>

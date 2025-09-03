@@ -1,102 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Cream & Sugar</title>
-    <link rel="stylesheet" href="css/contactos.css">
-    <link rel="stylesheet" href="animaciones.css">
+  <meta charset="UTF-8">
+  <title>Contactos - Cream & Sugar</title>
+  <link rel="stylesheet" href="../css/contactos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <img  src="images/logo.png" class="menu-icono" alt="">
-            </div>
 
-            <div class="menu-toggle" id="menu-toggle">☰</div>
-                
-                <ul class="menu">
-                    <li><a href="index.html"><button>Inicio</button></a></li>
-                    <li><a href="html/menu.html"><button>Menu</button></a></li>
-                    <li><a href="html/pasionyambiente.html"><button>Pasion y Ambiente</button></a></li>
-                    <li><a href="html/galeria.html"><button>Galeria</button></a></li>
-                    <li><a href="html/contactos.html"><button>Contactos</button></a></li>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Cream & Sugar">
+      </div>
+      <ul class="menu">
+        <li><a href="../index.html" class="active">Inicio</a></li>
+        <li><a href="../html/menu.html">Menú</a></li>
+        <li><a href="../html/pasionyambiente.html">Pasión y Ambiente</a></li>
+        <li><a href="../html/Productos.html">Productos</a></li>
+        <li><a href="../html/contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Contáctanos</h1>
+      <p>Queremos escucharte, tu opinión hace la diferencia</p>
+    </div>
+  </header>
 
-                </ul>
-        </nav>
-       
+  <section class="contacto-container">
+    <div class="formulario">
+      <h2>Envíanos un mensaje</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Número de teléfono">
+        <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
 
-        <div class="header-content container">
-            <h1>Contactos</h1>
-        </div>
-    </header>
-    <b class="circulo"></b> 
+    <div class="info-contacto">
+      <h2>Información de contacto</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Cra 2a Este No. 64-169, Tunja - Boyacá</p>
+      <p><i class="fas fa-phone"></i> +57 323 333 0012</p>
+      <p><i class="fas fa-envelope"></i> creamandsugar@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> @cream&sugar</p>
+    </div>
+  </section>
 
-
-
-
-    <section class="coffe">
-
-       
-    </section>
-                        
-                    <div class="circulo txl"><b>Contactos</b></div>                                    
-
-            <div >
-                
-                <div class="tx">                                     
-                    
-                     </section>
-                      </div>
-                    
-                </div>  
-            <div >
-                <div > 
-                    <p class="j"><b>tell: </b>+57 3233330012-Domicilios
-                    <br><b>Email: </b>
-                    creamandsugar@gmail.com
-                    <br>
-                    <b>Buscano en nuestras redes como:</b> @cream&sugar
-                    <br><b>Estamos ubicados en:</b> Cra 2a Este No. 64-169_Tunja Boyacá
-
-                   
-
-
-                </p>
-                </div>      
-            </div>
-           
-            
-            </div>
-           
-         </div>
-           <footer class="footer">
-        <div class="footer-content container"> 
-            <div class="link">
-                <h3>NOSOTROS</h3>
-                <ul>
-                    <li><a href="#">Cream & Sugar</a></li>
-                    <li><a href="#">NIT 10000005</a></li>
-                    <li><a href="#">Cra 2a Este No. 64-169 </a></li>
-                    <li><a href="#">Tunja Boyacá</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>CONTÁCTANOS</h3>
-                <ul>
-                    <li><a href="#">creamandsugar@gmail.com</a></li>
-                    <li><a href="#">+57 3233330012</a></li>
-                    
-                </ul>
-            </div>
-            <div class="link">
-                <h3>ENCUENTRANOS</h3>
-                <ul>
-                    <li><a href="#">@cream&sugar</a></li>
-                    <li><a href="#">En todas las redes sociales</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-    </footer>
-    
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Cream & Sugar © 2025 - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
