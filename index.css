@@ -68,9 +68,9 @@ body {
   position: relative;
 }
 .header-content {
- text-align: center;       /* Centrar en horizontal */
-  position: absolute;       /* Nos permite moverlo libremente */
-  top: 60%;                 /* Ajusta qué tan arriba quieres (prueba con 20% o 25%) */
+ text-align: center;
+  position: absolute;      
+  top: 60%;                 
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -100,10 +100,10 @@ body {
 .btn-1:hover {
   background-color: #ebad8d;
 }
-.coffe, .servicios, .general, .blog {
+.coffe, .general, .galeria {
   padding: 50px 30px;
 }
-.coffe-content h2, .servicios-content h2, .blog h2 {
+.coffe-content h2, .galeria h2 {
   font-size: 55px;
   line-height: 70px;
   text-transform: uppercase;
@@ -117,35 +117,22 @@ body {
   margin: 0 auto 35px;
   text-align: center;
 }
-.coffe-group, .servicios-group, .blog-content {
+.coffe-group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
-.coffe-1, .servicios-1, .blog-1 {
+.coffe-1, .galeria-1 {
   text-align: center;
   max-width: 190px;
 
 }
-.coffe-1 img, .blog-1 img {
+.coffe-1 img, .galeria-1 img {
   width: 190px;
   border-radius: 10px;
 }
 
-.servicios {
-  background-image: url(images/bg3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-}
-.servicios-1 img {
-  width: 40px;
-  margin-bottom: 15px;
-}
-.servicios-1 h3 {
-  color: #ebad8d;
-}
 .general {
   display: flex;
   flex-wrap: wrap;
@@ -164,9 +151,27 @@ body {
   flex: 1;
   background: url(images/coffee-2.jpg) center/cover no-repeat;
 }
-.blog-1 img {
+.galeria-content {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;        
+  gap: 30px;              
+  margin-top: 20px;
+}
+.galeria {
+  text-align: center; 
+  margin: 40px 0;    
+}
+.galeria-1 {
+  text-align: center;
+  max-width: 220px; 
+}
+
+.galeria-1 img {
   width: 100%;
-  max-width: 250px;
+  height: 160px;       
+  object-fit: cover;   
+  border-radius: 10px;
 }
 .footer {
   padding: 80px 30px;
