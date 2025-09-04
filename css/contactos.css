@@ -138,6 +138,18 @@ h3 ~ p {
 }
 
 
+.mensaje {
+  float: left;   /*uso del left*/
+  width: 250px;   
+  margin-top: 40px;  
+}
+
+.mensaje > p {
+  font-size: 19px;
+  font-style: italic;
+  
+}
+
 .footer {
   background: #000;
   color: #fff;
