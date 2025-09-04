@@ -3,15 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.circulo{
+.primera{
 
-    margin-left: 90px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    
 
     animation-name: mover;
-    animation-duration: 2s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
@@ -21,10 +18,32 @@
 @keyframes mover{
 
     0%{
-        transform:  translateX(0);
+        color: rgb(0, 0, 0);
 
     }
     100%{
-        transform: translateX(100%);
+        color:  #6b4226;
+    }
+}
+.segunda{
+
+    
+
+    animation-name: xr;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes xr{
+
+    0%{
+        color:white;
+
+    }
+    100%{
+        color:  #6b4226;
     }
 }
