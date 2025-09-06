@@ -27,6 +27,7 @@ body {
 
 .navbar .logo img {
   height: 60px;
+  animation: moverLogo 3s infinite ease-in-out;
 }
 .navbar .menu {
   list-style: none;
@@ -158,4 +159,15 @@ body {
     margin-bottom: 15px;
     font-size: 1.2rem;
     color: #ff7f50;
+}
+@keyframes moverLogo {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
